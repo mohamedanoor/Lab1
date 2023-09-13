@@ -12,7 +12,7 @@
         // Compare the current fraction with the inputFraction
         int compareResult = inputArray[currentIndex].compareTo(inputFraction);
 
-        // If the current fraction is greater, increment the count
+        // If the current fraction is greater, count goes up by one
         if (compareResult > 0) {
             count++;
         }
