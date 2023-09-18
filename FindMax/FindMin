@@ -1,0 +1,46 @@
+/**
+ * @author Mohamed Noor
+ * Finds the maximum Fraction in an array of Fraction objects.
+ *
+ * @param input The array of Fraction objects to search for the maximum.
+ * @return The maximum Fraction in the input array, or null if the array is empty or null.
+ */
+public Fraction findMax(Fraction[] input) {
+    if (input == null || input.length == 0) {
+        // Handle empty input or null input array
+        return null;
+    }
+
+    Fraction maxFraction = input[0]; // Initialize maxFraction with the first element
+
+    for (int i = 1; i < input.length; i++) {
+        if (input[i].compare(maxFraction) > 0) {
+            maxFraction = input[i]; // Update maxFraction if a larger value is found
+        }
+    }
+
+    return maxFraction;
+}
+/**
+ * Finds the minimum Fraction in an array of Fraction objects.
+ *
+ * @param input The array of Fraction objects to search for the minimum.
+ * @return The minimum Fraction in the input array, or null if the array is empty or null.
+ */
+public Fraction findMin(Fraction[] input) {
+    if (input == null || input.length == 0) {
+        // Handle empty input or null input array
+        return null;
+    }
+
+    Fraction minFraction = input[0]; // Initialize minFraction with the first element
+
+    for (int i = 1; i < input.length; i++) {
+        if (input[i].compare(minFraction) < 0) {
+            minFraction = input[i]; // Update minFraction if a smaller value is found
+        }
+    }
+
+    return minFraction;
+}
+
