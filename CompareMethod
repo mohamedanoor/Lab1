@@ -1,1 +1,10 @@
 
+    public int compare(Fraction F) {
+        int compareFrac = this.numerator * F.denominator - this.denominator * F.numerator;
+        if(compareFrac > 0) {
+            return -1;
+        } else if(compareFrac == 0) {
+            return 0;
+        }
+        return 1;
+    }
