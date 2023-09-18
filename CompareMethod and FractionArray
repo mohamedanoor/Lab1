@@ -1,9 +1,26 @@
-    public static void main(String[] args) {
+/**
+ * Creates an array of fractions and initializes them.
+ * @author Abdirahman Mohamed
+ * @param args Command line arguments.
+ */
+public static void main(String[] args) {
         Fraction[] fractionArray = new Fraction[100];
         
         for(int i=0; i<fractionArray.length; i++)
             fractionArray[i] = new Fraction(i, i+1);
         }
+
+/**
+ * Compares the current fraction to the provided fraction <code>F</code>.
+ * 
+ * The comparison is based on cross multiplication to avoid conversion to decimals.
+ * @author Abdirahman Mohamed
+ * @param F The fraction to compare against the current fraction.
+ * @return  -1 if the current fraction is greater than the provided fraction,
+ *          0 if both fractions are equal,
+ *          1 if the current fraction is less than the provided fraction.
+ */
+
     public int compare(Fraction F) {
         int compareFrac = this.numerator * F.denominator - this.denominator * F.numerator;
         if(compareFrac > 0) {
