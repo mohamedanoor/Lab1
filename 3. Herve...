@@ -1,5 +1,6 @@
-3..Implement the Insertion Sort algorithm that sorts the array above
-Signature: void insertionSort(Fraction[] input);
+*/code by Herve Eden Badege.. 3. Implement the Insertion Sort algorithm that sorts the array above
+Signature: void insertionSort(Fraction[] input);. */
+
 
 public void insertionSort(Fraction[] input) {
     for (int i = 1; i < input.length; i++) {
