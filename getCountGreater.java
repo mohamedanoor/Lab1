@@ -1,11 +1,12 @@
-    // Code By Silas Qualls
+    //Silas Qualls
+    //Needs To be put into the Fraction class to run
     // Recursive method to count fractions greater than inputFraction
     public static int getCountGreater(Fraction[] inputArray, Fraction inputFraction) {
         return getCountGreaterRecursive(inputArray, inputFraction, 0, 0);
     }
 
     private static int getCountGreaterRecursive(Fraction[] inputArray, Fraction inputFraction, int currentIndex, int count) {
-        // Base case: If we have reached the end of the array, return the count
+        // If we have reached the end of the array, return the count
         if (currentIndex == inputArray.length) {
             return count;
         }
